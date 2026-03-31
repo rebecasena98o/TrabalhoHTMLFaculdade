@@ -1,0 +1,94 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('Assents/DeathNoteFundo.jpg');
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container-central { /*container central / meio da tela */
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    gap: 15px;
+    
+}
+
+.box-tarefas {
+    background-color: rgba(255, 255, 255, 0.618); /* fundo branco/transparente */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(94, 94, 94, 0.756);
+    width: 350px;
+    text-align: center;
+    
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+/* Estilo dos botões */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;  /*Faz com que o mouse vire uma "mãozinha"*/
+    font-weight: bold;
+    transition: transform 0.2s, background-color 0.2s;
+    margin: 5px;
+    font-family: "Times New Roman", serif;
+}
+
+.lista-resultado {
+    max-height: 200px;
+    overflow-y: auto; /* Adiciona scroll se a lista for muito longa */
+}
+
+#add {
+    background-color: #772db7;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#del {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 250px;
+}
+
+li {
+    background: #fff;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
